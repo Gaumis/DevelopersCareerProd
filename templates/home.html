@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Developers Job Opening</title>
+    {% include 'bootstrap.html' %}
+    <style>
+      .container-fluid{
+        color:black;
+      }
+      .custom-margin {
+        margin-top: 60px !important;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <div class="container mt-5">
+      <h1 class="text-center mt-4 mb-0 custom-margin">Developers Careers</h1>
+      <p class="lead text-center">Here you will mostly find job opening for python developers<p>
+      {% include 'banner.html' %}
+      <h2 class="text-center mt-2 mb-4">About Developer Careers</h2>
+      <div class="row mb-3">
+      <p class="lead col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sodales ut eu sem integer vitae justo eget magna. Vivamus arcu felis bibendum ut tristique. Tristique nulla aliquet enim tortor at auctor urna nunc id. Amet cursus sit amet dictum sit amet justo. Feugiat nibh sed pulvinar proin gravida hendrerit. Nunc consequat interdum varius sit amet mattis vulputate enim. Magna fringilla urna porttitor rhoncus dolor. In nisl nisi scelerisque eu ultrices vitae auctor eu. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. A cras semper auctor neque vitae tempus quam. 
+      </p>
+      <div class="d-none d-md-block col-md-6 text-end">
+        <img src="/static/partion.jpg" class="img-fluid" style="border-radius:10px;max-height: 75%;">
+      </div>
+      </div>
+      <h2 class="text-center mt-2 mb-4">Job Openings</h2>
+      <div class="mb-0">
+        {% for job in jobs %}
+          {% include 'job_item.html' %}
+        {% endfor %}
+      </div>
+      <div class="text-center">
+        <a href="mailto:kumargauravibm@gmail.com?subject=Question%20about%20Job%20Opening&body=Hi%20Developers%20Career%2C%0D%0A%0D%0AQuestion%20%3A%20%3CYour%20Question%3E" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
