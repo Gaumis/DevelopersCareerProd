@@ -210,23 +210,4 @@ def fetch_rows_from_db(id):
     #return inserted_data as a list of dictionaries
     return [dict(zip(select_result.keys(), row)) for row in inserted_data]
   
-'''
-# print(load_job_from_db(1))
-test_data = {
-    'inputFullName': 'John Doe',
-    'inputEmailId': 'john@example.com',
-    'inputPassword': 'secretpassword',
-    'inputMobileNumber': '1234567890',
-    'inputExperience': '3 years'
-}
 
-# add_user_to_db(test_data)
-
-# get_password_for_user("kumargaurav1527@gmail.com")
-
-
-change_password_for_user(8,"test","test1")'''
-# print(get_candidate_details_with_jobs(101))
-# print(load_job_application(5,101))
-# print(fetch_rows_from_db(101))
-take_action_db(119, 'Interviewed')
